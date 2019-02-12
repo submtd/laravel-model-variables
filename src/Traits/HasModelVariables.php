@@ -39,7 +39,7 @@ trait HasModelVariables
         if (!$variable = $this->variables()->where('index', $index)->first()) {
             return null;
         }
-        return $variable->value;
+        return $variable;
     }
 
     public function setVariable(string $index, string $value)
