@@ -1,6 +1,6 @@
 <?php
 
-namespace Submtd\LaravelGlobalVariables\Providers;
+namespace Submtd\LaravelModelVariables\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

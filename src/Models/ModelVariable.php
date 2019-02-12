@@ -11,8 +11,21 @@ class ModelVariable extends Model
         'value',
     ];
 
+    protected $hidden = [
+        'id',
+        'model_type',
+        'model_id',
+        'created_at',
+        'updated_at',
+    ];
+
     public function model()
     {
         return $this->morphTo();
+    }
+
+    public function toArray()
+    {
+        return [$this->index => $this->value];
     }
 }
